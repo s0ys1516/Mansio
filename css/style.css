@@ -8198,15 +8198,24 @@ button.swiper-pagination-bullet {
 }
 
 .phone__text::before {
-  content: "";
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 10px;
-  width: 8px;
-  height: 8px;
-  background-color: #f0d175;
-  border-radius: 50%;
+  position: absolute;
+width: 205px;
+height: 23px;
+left: -13px;
+top: -4.5px;
+
+font-family: Commissioner;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 23px;
+/* identical to box height, or 164% */
+
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #FFFFFF;
 }
 
 .phone__text--green::before {
@@ -9341,6 +9350,7 @@ button.swiper-pagination-bullet {
 
   .header__interior .header__col .phone {
     color: #000;
+
   }
 
   .header__interior .btn {
