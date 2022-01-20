@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest" crossorigin="use-credentials">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#0c1e2c">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#0c1e2c">
+  <!-- используйте только для шрифта находящегося на первом экране -->
+  <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css?v=2.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <title>Mansio — Архитектурное проектирование домов</title>
+  <!-- Marquiz script start -->
+<script>
+  (function(w, d, s, o){
+    var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+      if (document.readyState !== 'loading') Marquiz.init(o);
+      else document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init(o);
+      });
+    };
+    d.head.insertBefore(j, d.head.firstElementChild);
+  })(window, document, 'script', {
+    host: '//quiz.marquiz.ru',
+    region: 'eu',
+    id: '6176683c9ff6b7003faf6a88',
+    autoOpen: false,
+    autoOpenFreq: 'once',
+    openOnExit: false,
+    disableOnMobile: false
+  }
+  );
+</script>
+<!-- Marquiz script end -->
+</head>
+
+<body>
+  <!-- Roistat -->
+  <script>
+    (function(w, d, s, h, id) {
+      w.roistatProjectId = id;
+      w.roistatHost = h;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init?referrer=" + encodeURIComponent(d.location.href);
+      var js = d.createElement(s);
+      js.charset = "UTF-8";
+      js.async = 1;
+      js.src = p + h + u;
+      var js2 = d.getElementsByTagName(s)[0];
+      js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', '8ad49b285e5fbd7ca7297bcd27f8f861');
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] = m[i] || function() {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(85643182, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/85643182" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-211557477-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-211557477-1');
+  </script>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="3d-printer" viewBox="0 0 61 63">
+        <image id="_3d-printer" data-name="3d-printer" width="61" height="63" xlink:href="data:img/png;base64,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" />
+      </symbol>
+      <symbol id="arrow-bottom" viewBox="0 0 50 50">
+        <image id="arrow" width="50" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABcUlEQVRoge2asUoDQRCGv6gIFjZ5iGCthYWVtWCpT5B3yCNop1VQyQNoaZFKS4u8QezSpRPsRDC/hYN6h0G5203GYz44kt2dnZ2PJVxuuZYk0QBWll1AKhojslZqt5ZSRXU+fxaN2ZEQ8UaIeCNEvBEi3ggRb4SIN0LEG+XnkSp0gXaN+U/AVd0iUog8A5c15h8nqIFW6fCh6hPiNXAE3ALjP8RvAYfADfVEvmpXESpebUlTy9H7JbZncVObV3XNQu2pRJB0YDleJHXmxHRsXBZfZ71sIkgaWJ7hnPGhjQ8SrJVVZFPSxHL1S2N9659YnGsRJO1Lmlm+HevbtvbMxlOsk10ESWeW797ad9Y+T7jGQkQ2JI0t54V9Plp/FpFU95Gf2AUegFXgDdgDRgnzw4JOGkfAiX0/Jb1EgZw7ArDOx/+oLvCaODd825HcIrmJQ2y3hIg3QsQbIeKNEPFGiHgjRLxRPjL9t688NWZHGiPyDpxUiu+s1NqdAAAAAElFTkSuQmCC" />
+      </symbol>
+      <symbol id="arrow-top" viewBox="0 0 50 50">
+        <image id="arrow_Kopie" data-name="arrow Kopie" width="50" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABVUlEQVRoge2asUoDQRCGvzMiWATBhwjWWlhYpRYsz87nuEpfQauAkMJ0Wlqk0tLCN7BMl1ewMWPhj5iDoNztJuMxHxzH7szN7scm3O1xhZkZHWBr0xNIRWdEtmvtYiOzaM7336IzKxIi3ggRb4SIN0LEGyHijRDxRm6RHeBO56zkFrkELoCrzONQ1La6Kfcjx8AL0AM+gBPgNWF9WMN+ZJevn1QPuNV5ov482DIkOq5V71ntJ7VvEo6xNPccIkMzW6jekfoO1V4o7l6kb2Yz1RrVYiP1z5TnWmSsOtMV8aniY88ip6rxbmaDFTkDxU357kT2zWyuGtUvuZXy5rouiUiq+8g9UAKPwNsf8g+AM+ABOG84Jvy4j6RYkdLaUaZYkfqbxibsAVXL61uT8xFlHcQrU7eEiDdCxBsh4o0Q8UaIeCNEvBEi3qjvEP/tJ0+dWZHOiHwCBOqNQyfRb+oAAAAASUVORK5CYII=" />
+      </symbol>
+      <symbol id="arrows" viewBox="0 0 480.026 480.026">
+        <g>
+          <g>
+            <path d="M475.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
+			c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312l-134.368,149.28c-4.224,4.704-5.312,11.456-2.72,17.216
+			c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
+			C481.394,244.653,481.394,235.373,475.922,229.325z" />
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M267.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
+			c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312L4.114,389.293c-4.224,4.704-5.312,11.456-2.72,17.216
+			c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
+			C273.394,244.653,273.394,235.373,267.922,229.325z" />
+          </g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+      </symbol>
+      <symbol id="chat" viewBox="0 0 39 39">
+        <image id="chat" width="39" height="39" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAB0klEQVRYhe3XTagNYRzH8c8Z58r76i6ou1FKSknZohSKjZWV5HWBRN26pe7dWFhZICULG3lZiGJjodhIWd4bRVbuQleKGyWulyxmjsbjzHnGqXNm1PnWLP7P8+v5f5vpmXmmMTs1JmMXjmEdFug/c3iGy7gJzWziDE5VIBSyObs24mgT29VDLM8RPElwumqTAiYSrK3aooCRBI2qLYpI8L1qiQJ+JFUbdGIg1y0DuW4pI3cFO7EHrzvkxrEDo/hZkHmHA1nuQqxxMzJ/G4dy9SO8xJIgdyLX7D5mcD3IfMMW6ce9lVuIw0XNY3fuYlC/weM2uUtBfQNfgrHnObEW5zo1j8ltajO2us3YhqBehaFgbKTk+r+JyU1Iz3lDGMZVrGyTu4b1WW4N7mBekBnGPazIcltxtlPzxuzU2EcsjUjOYBkWlcgtj2Tm8L5E7lNsQ7SILfQvufll1/vv33OVMZDrloFctwzkuqRZZ7la/+BM1llutK5yB/G07Ie/xStM90AGvmJSeix7QfyYnuc8TvZAqpAych+wH3d77PIXMbkH2Cs9RPadThtiHNtUJEZ650LBaeljfNh/nT9pYnGuvoV9+FyJTUAi/VN6i+PYrSZi8AtoCEly0CsYyAAAAABJRU5ErkJggg==" />
+      </symbol>
+      <symbol id="chevron-right" viewBox="0 0 1024 1024">
+        <path d="M238.506667 316.16L298.666667 256l256 256-256 256-60.16-60.16L433.92 512 238.506667 316.16m256 0L554.666667 256l256 256-256 256-60.16-60.16L689.92 512l-195.413333-195.84z" fill="" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+    </svg>
+  </div>
+  <div class="wrapper">
+    <header class="header    header__house ">
+      <div class="header__wrapper">
+        <a class="header__logo" href="//mansio-group.ru/" aria-label="Переход на главный сайт" target="_blank">
+          <img src="img/logo.svg" alt="Логотип Mansio Group" width="211" height="33">
+        </a>
+        <div class="header__col  whatsapp">
+          <a class="whatsapp__link" href="https://wa.me/79175432263?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20">
+            <span class="visually-hidden">Написать в WhatsApp</span>
+          </a>
+          <p class="whatsapp__text">Среднее время ответа<br> дизайнера: <b>15&nbsp;секунд</b></p>
+        </div>
+        <div class="header__col  header__col--right">
+          <p class="phone  header__phone">
+            <span class="phone__text  phone__text--green">Ежедневно с&nbsp;9:00 до&nbsp;20:00</span>
+            <a class="phone__link" href="tel:+74951820242">+7 (495) 182-02-42</a>
+          </p>
+          <button class="btn btn-first" type="button" data-modal="callback">Нужна проверка проекта?</button>
+          <button class="btn" type="button" data-modal="callback">Перезвонить вам?</button>
+        </div>
+      </div>
+    </header>
+    <div class="house">
+      <div class="house__text">
+        <div class="house__text-wrap">
+          <p class="house__title-before">Архитектурное проектирование домов</p>
+          <h1 class="house__title">Спроектируем уникальный дом с&nbsp;вашим характером</h1>
+          <div class="house__chat">
+            <svg width="39" height="39">
+              <use xlink:href="#chat"></use>
+            </svg>
+            <p>
+              Расскажите, каким вы&nbsp;видите дом вашей мечты и&nbsp;получите <b>ценный подарок!</b>
+            </p>
+          </div>
+          <button class="btn  house__btn" type="button" onclick="Marquiz.showModal('6176683c9ff6b7003faf6a88')">
+            Спроектировать дом
+            <span>
+              <svg width="15" height="15">
+                <use xlink:href="#arrows"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="swiper house__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide item">
+            <div class="item-content">
+              <picture class="house__img-wrap">
+                <source srcset="img/slides/bg-fs.webp" type="image/webp">
+                <img class="house__img" src="img/slides/bg-fs.jpg" width="100%" alt="Фотография проекта Mansio Group — Скандика">
+              </picture>
+              <ul>
+                <li>
+                  <span class="plus">+</span>
+                  <p>Уникальная архитектура, продуманная до&nbsp;мелочей</p>
+                </li>
+                <li>
+                  <span class="plus">+</span>
+                  <p>Детально проработанная техническая документация, понятная любому строителю</p>
+                </li>
+                <li>
+                  <span class="plus">+</span>
+                  <p>Лучшие архитекторы, работающие в разных стилях</p>
+                </li>
+                <li>
+                  <span class="plus">+</span>
+                  <p>Персональный архитектор для каждого клиента</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide item">
+            <div class="item-content">
+              <picture class="house__img-wrap">
+                <source srcset="img/slides/bg-fs.webp" type="image/webp">
+                <img class="house__img" src="img/slides/bg-fs.jpg" width="100%" alt="Фотография проекта Mansio Group — Скандика">
+              </picture>
+              <ul>
+                <li>
+                  <span class="plus">+</span>
+                  <p>Уникальная архитектура, <br> будущего дома продуманная <br> до каждой мелочи</p>
+                </li>
+                <li>
+                  <span class="plus">+</span>
+                  <p> Детально проработанная <br> техническая документация, <br> понятная любому строителю</p>
+                </li>
+                <li>
+                  <span class="plus">+</span>
+                  <p>Лучшие архитекторы, <br> работающие в разных <br> стилевых решениях</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <svg width="50" height="50">
+            <use xlink:href="#arrow-top"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-prev">
+          <svg width="50" height="50">
+            <use xlink:href="#arrow-bottom"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="house__gift">
+        <svg width="63" height="61">
+          <use xlink:href="#3d-printer"></use>
+        </svg>
+        <p class="gift">* Визуализация участка в&nbsp;подарок!</p>
+      </div>
+    </div>
+    <div class="projects">
+            <div class="projects-headline projects-headline__comissioner">
+                <h2>Мы успешно выполнили более <span>150 проектов!</span></h2>
+            </div>
+            <section class="catalog" id="sectionCatalog">
+    <ul class="catalog__list">
+      <li
+  class=" card
+    card--catalog
+    catalog__item
+    ">
+
+  <a class="card__link-wrapper"
+    href="/project-amsterdam.html"
+    >
+
+    <div class="card__content">
+      <dl class="card__headline">
+        <dt class="card__title">Амстердам</dt>
+        <dd class="card__subtitle">Авторский проект</dd>
+      </dl>
+    </div>
+
+    <picture class="card__picture">
+      <source srcset="img/catalog/project-1.webp 1x" type="image/webp">
+      <img src="img/catalog/project-1.jpg" alt="Амстердам" width="950">
+    </picture>
+
+  </a>
+
+  
+    <div class="card__info-pane  card-pane">
+
+      <dl class="card-pane__name-wrapper">
+        <dt class="card__title  card-pane__title">Амстердам</dt>
+        <dd class="card__subtitle  card-pane__subtitle">Авторский проект</dd>
+      </dl>
+
+      <dl class="card-pane__property-list">
+        <div class="card-pane__property">
+          <dt>Площадь:</dt>
+          <dd>195&nbsp;м2</dd>
+        </div>
+        <div class="card-pane__property">
+          <dt>Этажность</dt>
+          <dd>1</dd>
+        </div>
+        <div class="card-pane__property  card-pane__property--label">
+          <dt>Материал</dt>
+          <dd>Газоблок / Теплая керамика (Porotherm)</dd>
+        </div>
+
+      </dl>
+      
+    <a href="/project-amsterdam.html"
+      class="
+        btn
+        
+        card-pane__btn"
+      
+      >
+      Открыть проект
+      <span><svg><use xlink:href="/img/sprite_auto.svg#arrows"></use></svg></span>
+    </a>
+     
+    </div>
+  
+
+  
+</li>
+      <li
+  class=" card
+    card--catalog
+    catalog__item
+    ">
+
+  <a class="card__link-wrapper"
+    href="/project-kanny.html"
+    >
+
+    <div class="card__content">
+      <dl class="card__headline">
+        <dt class="card__title">Канны</dt>
+        <dd class="card__subtitle">Авторский проект</dd>
+      </dl>
+    </div>
+
+    <picture class="card__picture">
+      <source srcset="img/catalog/project-2.webp 1x" type="image/webp">
+      <img src="img/catalog/project-2.jpg" alt="Канны" width="950">
+    </picture>
+
+  </a>
+
+  
+    <div class="card__info-pane  card-pane">
+
+      <dl class="card-pane__name-wrapper">
+        <dt class="card__title  card-pane__title">Канны</dt>
+        <dd class="card__subtitle  card-pane__subtitle">Авторский проект</dd>
+      </dl>
+
+      <dl class="card-pane__property-list">
+        <div class="card-pane__property">
+          <dt>Площадь:</dt>
+          <dd>238&nbsp;м2</dd>
+        </div>
+        <div class="card-pane__property">
+          <dt>Этажность</dt>
+          <dd>1</dd>
+        </div>
+        <div class="card-pane__property  card-pane__property--label">
+          <dt>Материал</dt>
+          <dd>Газоблок / Теплая керамика (Porotherm)</dd>
+        </div>
+
+      </dl>
+      
+    <a href="/project-kanny.html"
+      class="
+        btn
+        
+        card-pane__btn"
+      
+      >
+      Открыть проект
+      <span><svg><use xlink:href="/img/sprite_auto.svg#arrows"></use></svg></span>
+    </a>
+     
+    </div>
+  
+
+  
+</li>
+      <li
+  class=" card
+    card--catalog
+    catalog__item
+    ">
+
+  <a class="card__link-wrapper"
+    href="/project-kataloniya.html"
+    >
+
+    <div class="card__content">
+      <dl class="card__headline">
+        <dt class="card__title">Каталония</dt>
+        <dd class="card__subtitle">Авторский проект</dd>
+      </dl>
+    </div>
+
+    <picture class="card__picture">
+      <source srcset="img/catalog/project-3.webp 1x" type="image/webp">
+      <img src="img/catalog/project-3.jpg" alt="Каталония" width="950">
+    </picture>
+
+  </a>
+
+  
+    <div class="card__info-pane  card-pane">
+
+      <dl class="card-pane__name-wrapper">
+        <dt class="card__title  card-pane__title">Каталония</dt>
+        <dd class="card__subtitle  card-pane__subtitle">Авторский проект</dd>
+      </dl>
+
+      <dl class="card-pane__property-list">
+        <div class="card-pane__property">
+          <dt>Площадь:</dt>
+          <dd>355&nbsp;м2</dd>
+        </div>
+        <div class="card-pane__property">
+          <dt>Этажность</dt>
+          <dd>2</dd>
+        </div>
+        <div class="card-pane__property  card-pane__property--label">
+          <dt>Материал</dt>
+          <dd>Газоблок / Теплая керамика (Porotherm)</dd>
+        </div>
+
+      </dl>
+      
+    <a href="/project-kataloniya.html"
+      class="
+        btn
+        
+        card-pane__btn"
+      
+      >
+      Открыть проект
+      <span><svg><use xlink:href="/img/sprite_auto.svg#arrows"></use></svg></span>
+    </a>
+     
+    </div>
+  
+
+  
+</li>
+      <li
+  class=" card
+    card--catalog
+    catalog__item
+    ">
+
+  <a class="card__link-wrapper"
+    href="./project-scandica.html"
+    >
+
+    <div class="card__content">
+      <dl class="card__headline">
+        <dt class="card__title">Скандика</dt>
+        <dd class="card__subtitle">Авторский проект</dd>
+      </dl>
+    </div>
+
+    <picture class="card__picture">
+      <source srcset="img/catalog/project-4.webp 1x" type="image/webp">
+      <img src="img/catalog/project-4.jpg" alt="Скандика" width="951">
+    </picture>
+
+  </a>
+
+  
+    <div class="card__info-pane  card-pane">
+
+      <dl class="card-pane__name-wrapper">
+        <dt class="card__title  card-pane__title">Скандика</dt>
+        <dd class="card__subtitle  card-pane__subtitle">Авторский проект</dd>
+      </dl>
+
+      <dl class="card-pane__property-list">
+        <div class="card-pane__property">
+          <dt>Площадь:</dt>
+          <dd>360&nbsp;м2</dd>
+        </div>
+        <div class="card-pane__property">
+          <dt>Этажность</dt>
+          <dd>2</dd>
+        </div>
+        <div class="card-pane__property  card-pane__property--label">
+          <dt>Материал</dt>
+          <dd>Газоблок / Теплая керамика (Porotherm)</dd>
+        </div>
+
+      </dl>
+      
+    <a href="./project-scandica.html"
+      class="
+        btn
+        
+        card-pane__btn"
+      
+      >
+      Открыть проект
+      <span><svg><use xlink:href="/img/sprite_auto.svg#arrows"></use></svg></span>
+    </a>
+     
+    </div>
+  
+
+  
+</li>
+    </ul>
+</section>
+        </div>
+    <footer class="footer">
+      <div class="footer-company">
+        <a class="footer__logo" href="https://mansio-group.ru/" aria-label="Переход на главный сайт">
+          <img src="img/logo-dark.svg" alt="Логотип Mansio Group" width="267" height="41">
+        </a>
+        <p>
+          Дизайн интерьера домов под <br> ключ от проекта до ремонта
+        </p>
+      </div>
+      <div class="footer-requisites">
+        <p>
+          ООО «МАНСИО ГРУПП» <br> ИНН 7727435818 <br> ОГРН 1197746734767
+        </p>
+        <a href="https://mansio-group.ru/privacy.html" target="_blank">Политика конфиденциальности</a>
+      </div>
+      <div class="footer-contact">
+        <div class="social">
+          <p class="social__text">Напишите нам, дизайнеры <span>online</span></p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link viber">
+                <i class="fab fa-viber"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/mansio_group" class="social__link telegram">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://wa.me/79175432263?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20" class="social__link whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <p>
+            <span class="icon-wrap"><i class="fas fa-map-marker-alt"></i> </span><span>Адрес:</span>
+            Рублево-Успенское шоссе 1 км, д 6, офис 512
+          </p>
+          <a href="mailto:info@mansio-group.ru"><span class="icon-wrap"><i class="fas fa-envelope"></i></span><span>Электронная почта: </span>info@mansio-group.ru</a>
+        </div>
+      </div>
+      <div class="footer-designer">
+        <div class="footer-designer__wrap">
+          <a class="phone__link" href="tel:+74951820242">+7 (495) 182-02-42</a>
+          <span class="phone__text  phone__text--green">Дизайнер сейчас на связи</span>
+        </div>
+        <p class="footer-copywrite">
+          2021. Все права защищены
+        </p>
+      </div>
+      <div class="footer-call">
+        <button id="footer-call__btn" class="btn" type="button" data-modal="callback">Заказать звонок дизайнера?</button>
+        <a href="https://site.pandaprofit.ru/" target="_blank">Сайт разработан в PANDA••PROFIT</a>
+      </div>
+    </footer>
+    <div class="modal modal--preload modal--callback    ">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <b class="h1 mb-3">Мы вам перезвоним</b>
+          <p class="lead">В ближайшее время с вами свяжется персональный менеджер и ответит на интересующие вопросы</p>
+          <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"824308",hash:"eb4c8a02bc8d0e34f40c0bf6717e14c2",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_824308" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1636696307"></script>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
