@@ -7260,7 +7260,7 @@ readers do not read off random characters that represent icons */
   top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
-  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  
   z-index: 10;
   cursor: pointer;
   display: -webkit-box;
@@ -7273,6 +7273,12 @@ readers do not read off random characters that represent icons */
   -ms-flex-pack: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  margin-bottom: 58%;
+  transform: rotate(90deg)
+}
+
+.swiper-button-prev {
+  margin-left: 50px;
 }
 
 .swiper-button-prev.swiper-button-disabled,
