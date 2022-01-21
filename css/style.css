@@ -7273,12 +7273,15 @@ readers do not read off random characters that represent icons */
   -ms-flex-pack: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
-  margin-bottom: 58%;
   transform: rotate(90deg)
 }
 
 .swiper-button-prev {
   margin-right: 68px;
+}
+
+.swiper-button-next {
+  margin-bottom: 910px;
 }
 
 .swiper-button-prev.swiper-button-disabled,
