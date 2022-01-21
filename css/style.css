@@ -8210,6 +8210,8 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   text-align: right;
   margin-right:175px;
+  position: absolute;
+  left: 1150px;
 }
 
 .phone__text::before {
@@ -8316,6 +8318,11 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.header__col.whatsapp {
+    position: absolute;
+    left: 675px;
 }
 
 .whatsapp__link {
