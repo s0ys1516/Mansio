@@ -7281,7 +7281,8 @@ readers do not read off random characters that represent icons */
 }
 
 .swiper-button-next {
-  margin-bottom: 910px;
+  position: absolute;
+  top: 55px;
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -9059,7 +9060,6 @@ button.swiper-pagination-bullet {
   right: 40px;
   bottom: 112px;
   left: unset;
-  top: unset;
   width: 50px;
   height: 50px;
 }
