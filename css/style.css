@@ -8210,8 +8210,6 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   text-align: right;
   margin-right:175px;
-  position: absolute;
-  left: 1150px;
 }
 
 .phone__text::before {
@@ -8323,6 +8321,7 @@ button.swiper-pagination-bullet {
 .header__col.whatsapp {
     position: absolute;
     left: 675px;
+    margin-right:50px;
 }
 
 .whatsapp__link {
@@ -9085,9 +9084,9 @@ button.swiper-pagination-bullet {
   margin-left: auto;
 }
 
-.house__slider .item-content {
-  position: relative;
-}
+
+
+
 
 .house__slider .item ul {
   position: absolute;
@@ -9345,7 +9344,7 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 1439.98px) {
+@media (max-width: 1600px) {
   .container {
     padding: 0 32px;
   }
@@ -9604,10 +9603,6 @@ button.swiper-pagination-bullet {
     padding: 0 24px;
   }
 
-  .header__house .btn {
-    display: none;
-  }
-
   .header__interior .header__col .phone {
     color: white;
   }
@@ -9734,17 +9729,18 @@ button.swiper-pagination-bullet {
     padding: 0 15px;
   }
 
-  .house__slider {
-    width: 100%;
-    max-height: calc(100vw / 1.32);
-    min-width: unset;
-  }
-
   .house__slider .swiper-button-next {
     bottom: 100px;
     width: 40px;
     height: 40px;
     right: 20px;
+  }
+
+  .house__slider {
+    width: 100%;
+    max-height: calc(100vw / 1.32);
+    min-width: unset;
+
   }
 
   .house__slider .swiper-button-prev {
@@ -9818,9 +9814,35 @@ button.swiper-pagination-bullet {
   .interior-pluses .item {
     font-size: 16px;
   }
+
+   .house__slider .item ul {
+    top: 0;
+    padding: 10px 15px;
+  }
+
+  .house__slider .item ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 15px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
+  }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
+  .header__house .btn {
+    display: none;
+  }
+}  
+
+@media (max-width: 768px) {
   .container {
     padding: 0 16px;
   }
@@ -10046,26 +10068,6 @@ button.swiper-pagination-bullet {
   .house__slider .swiper-button-prev {
     width: 30px;
     height: 30px;
-  }
-
-  .house__slider .item ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 30px 15px;
-    background: rgba(0, 0, 0, 0.5);
-    -webkit-box-align: initial;
-    -ms-flex-align: initial;
-    align-items: initial;
-  }
-
-  .house__slider .item ul {
-    top: 0;
-    padding: 10px 15px;
   }
 
   .house__slider .item ul li {
