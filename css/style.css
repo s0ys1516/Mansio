@@ -8544,6 +8544,7 @@ button.swiper-pagination-bullet {
   -ms-flex-align: start;
   align-items: flex-start;
   height: 100%;
+  text-decoration: none;
 }
 
 .card__link-wrapper:hover .card__picture::after,
