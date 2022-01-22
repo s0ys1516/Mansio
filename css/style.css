@@ -9879,6 +9879,27 @@ p.phone.header__phone {
     -ms-flex-pack: center;
     justify-content: center;
   }
+
+  .footer-designer {
+    position: absolute;
+    right: -160px;
+  }
+
+  .footer-contact .social {
+    position: absolute;
+    right:50px;
+    bottom:130px;
+  }
+
+  .footer-contact .info {
+    position: absolute;
+    right:50px;
+    bottom:210px;
+  }  
+
+  .footer-copywrite {
+    visibility:hidden;
+  }  
 }  
 
 @media (max-width: 767px) {
@@ -9940,12 +9961,6 @@ p.phone.header__phone {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-  }
-
-  .footer-contact .info {
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
   }
 
   .modal__wrapper {
