@@ -9900,6 +9900,17 @@ p.phone.header__phone {
   .footer-copywrite {
     visibility:hidden;
   }  
+
+  .footer-call .btn {
+    visibility:hidden;
+  }
+
+  .footer-call a {
+    position: absolute;
+    left: 40px;
+    bottom: 10px;
+    color: black;
+  }
 }  
 
 @media (max-width: 767px) {
