@@ -7908,7 +7908,7 @@ p.phone.header__phone {
 .footer-company p {
   margin: 37px 0 0;
   font-family: "Avenir";
-  font-size: 16.7px;
+  font-size: 12px;
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.33px;
@@ -7939,7 +7939,7 @@ p.phone.header__phone {
 
 .footer-requisites a {
   color: #898989;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .footer-contact {
@@ -8056,7 +8056,7 @@ p.phone.header__phone {
   font-weight: normal;
   line-height: 1.79;
   letter-spacing: 0.28px;
-  color: rgba(137, 137, 137, 0.5);
+  color: #000000;
   text-decoration: none;
 }
 
@@ -8786,6 +8786,7 @@ p.phone.header__phone {
   display: flex;
   font-size: 14.6px;
   line-height: 1.5;
+  flex-direction: column;
 }
 
 .card-pane__property dt {
@@ -9310,6 +9311,8 @@ p.phone.header__phone {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
   }
 
   .footer-contact .social {
@@ -9320,7 +9323,6 @@ p.phone.header__phone {
   }
 
   .footer-contact .info {
-    text-align: center;
   }
 
   .footer-designer {
@@ -9329,14 +9331,14 @@ p.phone.header__phone {
     width: 50%;
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
-    order: 4;
-    margin-top: 20px;
+    order: 1;
+    text-align: right;
   }
 
   .footer-call {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
     order: 5;
@@ -9624,7 +9626,7 @@ p.phone.header__phone {
   }
 
   .footer-company {
-    width: 100%;
+    width: 50%;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -9636,7 +9638,6 @@ p.phone.header__phone {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     text-align:left;
@@ -9881,20 +9882,22 @@ p.phone.header__phone {
   }
 
   .footer-designer {
-    position: absolute;
     right: -160px;
+    text-align: right;
   }
 
   .footer-contact .social {
-    position: absolute;
     right:50px;
     bottom:130px;
+    order: 1;
+
   }
 
   .footer-contact .info {
-    position: absolute;
     right:50px;
     bottom:210px;
+    padding-bottom: 30px;
+    font-size: 12px;
   }  
 
   .footer-copywrite {
@@ -9902,14 +9905,14 @@ p.phone.header__phone {
   }  
 
   .footer-call .btn {
-    visibility:hidden;
   }
 
   .footer-call a {
-    position: absolute;
-    left: 40px;
+    left: 14px;
     bottom: 10px;
     color: black;
+    font-size: 11px;
+    align-items: flex-start;
   }
 }  
 
@@ -9952,7 +9955,7 @@ p.phone.header__phone {
   }
 
   .footer-requisites {
-    font-size: 14px;
+    font-size: 12px;
     width: auto;
     min-width: 0;
     -ms-flex-negative: 1;
@@ -9962,12 +9965,12 @@ p.phone.header__phone {
     flex-grow: 0;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
+    padding-top: 10px;
   }
 
   .footer-contact {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
     min-width: 0;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -10154,11 +10157,38 @@ p.phone.header__phone {
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 700px) {
+.card-pane__btn {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    max-width: 100px;
+    display: none;
+  }
+
+  .card-pane {
+    grid-template-columns: minmax(-webkit-max-content, -webkit-max-content) minmax(-webkit-min-content, auto);
+    grid-template-columns: minmax(max-content, max-content) minmax(min-content, auto);
+}
+}  
+
+@media (max-width: 512px) {
   .footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .footer-contact .social {
+    order:0;
+  }
+
+  .social__text {
+    visibility: visible;
+  }
+
+  .footer-contact .info {
+    text-align: center;
   }
 
   .footer__logo img {
@@ -10170,6 +10200,7 @@ p.phone.header__phone {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 100%;
   }
 
   .footer-company p {
@@ -10182,6 +10213,8 @@ p.phone.header__phone {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 
   .footer-contact {
@@ -10192,13 +10225,15 @@ p.phone.header__phone {
     align-items: center;
     text-align: center;
     min-width: unset;
+    order: 5;
   }
 
   .footer-designer {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
-    order: 5;
+    order: 1;
     width: 100%;
+    padding-top: 20px;
   }
 
   .footer-designer__wrap {
@@ -10209,7 +10244,7 @@ p.phone.header__phone {
 
   .footer-copywrite {
     text-align: center;
-    margin-top: 15px;
+    visibility: hidden;
   }
 
   .footer-call {
@@ -10225,7 +10260,7 @@ p.phone.header__phone {
   }
 
   .footer-call a {
-    display: none;
+    align-items: center;
   }
 
   .btn {
@@ -10249,13 +10284,6 @@ p.phone.header__phone {
 
   .card-pane__btn {
     display: none;
-  }
-
-  .card-pane__btn {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    max-width: 100px;
   }
 
   .projects-headline h2 {
